@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    height: 375px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+}
+
+.btn {
+    transition: all 0.15s ease-in-out !important;
+}
+
+* {
+    user-select: none;
+}
