@@ -8,9 +8,20 @@ const noOptions = [
     'NO',
     'STOP LYING',
     'TRY AGAIN',
-    'ARE YOU SURE'
-]
+    'ARE YOU SURE',
+    'STOP CHASING ME',
+    'JUST SAY YES'
+];
 
+const yesOptions = [
+    'YES',
+    "THAT'S RIGHT",
+    'SPEAK THE TRUTH',
+    'BE TRUTHFUL',
+    'NO JUDGEMENT HERE',
+    "YOU'RE DOING GREAT",
+    'CMON IM RIGHT HERE'
+];
 
 const onYesClicked = () => {
     headerText.innerText = 'Congrats on coming out of the closet <3';
@@ -47,5 +58,9 @@ const runAway = () => {
     noBtn.style.top = randYPos + 'px';
 
     const noOptionIndex = Math.round(Math.random() * (noOptions.length-1));
-    noBtn.innerText = noOptions[noOptionIndex];
+    noBtn.innerText = noOptions[noOptionIndex];    
+
+    const yesOptionIndex = Math.round(Math.random() * (yesOptions.length-1));
+    yesBtn.innerText = yesOptions[yesOptionIndex];    
+
 }

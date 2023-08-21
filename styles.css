@@ -15,6 +15,7 @@ img {
     height: 375px;
     margin: auto;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .btnContainer {
@@ -24,7 +25,7 @@ img {
 }
 
 .btn {
-    transition: all 0.15s ease-in-out !important;
+    transition: all 0.4s ease-in-out !important;
 }
 
 * {
