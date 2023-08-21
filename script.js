@@ -14,6 +14,7 @@ const noOptions = [
 
 const onYesClicked = () => {
     headerText.innerText = 'Congrats on coming out of the closet <3';
+    showHappyGif();
     yesBtn.remove();
     noBtn.remove();
 }
@@ -29,6 +30,9 @@ const resetGif = () => {
     imgEl.src = 'assets/patricksponge.gif';
 }
 
+const showBeggingGif = () => {
+    imgEl.src = 'assets/begging.gif';
+}
 const showHappyGif = () => {
     imgEl.src = 'assets/happy.gif';
 }
